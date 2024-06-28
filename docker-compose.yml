@@ -1,12 +1,12 @@
 version: '3'
 services:
   backend:
-    image: ${DOCKER_USERNAME}/your-repo-name:backend-latest
+    image: ${DOCKER_USERNAME}/raspberrypihelloworld:backend-latest
     build: ./backend
     ports:
       - "5000:5000"
   frontend:
-    image: ${DOCKER_USERNAME}/your-repo-name:frontend-latest
+    image: ${DOCKER_USERNAME}/raspberrypihelloworld:frontend-latest
     build: ./frontend
     ports:
       - "80:80"

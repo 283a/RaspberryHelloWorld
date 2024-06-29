@@ -1,12 +1,6 @@
 version: '3'
 services:
-  backend:
-    image: ${DOCKER_USERNAME}/raspberrypihelloworld:backend-latest
+  web:
+    build: .
     ports:
-      - "5000:5000"
-  frontend:
-    image: ${DOCKER_USERNAME}/raspberrypihelloworld:frontend-latest
-    ports:
-      - "8080:80"  # Change to a non-privileged port
-    depends_on:
-      - backend #192.168.178.67 
+      - "5000:5000" #192.168.178.67 

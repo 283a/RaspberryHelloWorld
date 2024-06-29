@@ -9,4 +9,4 @@ services:
     ports:
       - "8080:80"  # Change to a non-privileged port
     depends_on:
-      - backend
+      - backend #192.168.178.67 
